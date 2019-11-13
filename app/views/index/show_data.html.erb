@@ -1,0 +1,13 @@
+<h4> Название </h4>
+<%= @organization.title %>
+<h4> Идентификатор: </h4>
+<%= @organization.ident %>
+<hr>
+<% @data_set_list.each do |hash| %>
+  <% hash.each do |key, value| %>
+    <%= key %>
+    <%= value %>
+    <br>
+  <% end %>
+  <hr>
+<% end %>

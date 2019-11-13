@@ -1,0 +1,11 @@
+<% @organizations.each do |org| %>
+  <%= org['id'] %>
+  <%= org['title'] %>
+  <% if Organization.find_by ident: org['id'] %>
+    <%= link_to 'Показать данные', show_data_path(org['id']) %>
+    <% file_name = org['id']%>
+    <%= link_to 'download', download_zip_path(file: file_name) %>
+  <% end %>
+    <%= link_to 'Получить данные', get_data_path(org['id'], org['title']), method: :post %>
+  <br>
+<% end %>
