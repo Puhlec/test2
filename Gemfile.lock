@@ -193,11 +193,10 @@ GEM
       railties (>= 4.2)
     websocket-driver (0.7.1)
       websocket-extensions (>= 0.1.0)
-    websocket-extensions (0.1.4)
+    websocket-extensions (0.1.5)
     xpath (3.2.0)
       nokogiri (~> 1.8)
     zeitwerk (2.2.1)
-    zip (2.0.2)
 
 PLATFORMS
   ruby
@@ -222,7 +221,6 @@ DEPENDENCIES
   web-console (>= 3.3.0)
   webdrivers
   webpacker (~> 4.0)
-  zip
 
 RUBY VERSION
    ruby 2.6.5p114
